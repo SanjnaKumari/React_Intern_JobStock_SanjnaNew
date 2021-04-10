@@ -22,13 +22,7 @@ const ResumeDetail = () => {
                 row2 = {DetailData[0].row2}
                 name = {DetailData[0].name}
                 desg = {DetailData[0].desg}
-                skillClass = {DetailData[0].skillClass}
-                s1 = {DetailData[0].s1}
-                s2 = {DetailData[0].s2}
-                s3 = {DetailData[0].s3}
-                s4 = {DetailData[0].s4}
-                s5 = {DetailData[0].s5}
-                s6 = {DetailData[0].s6}
+                Resume
                 li1 = {DetailData[0].li1}
                 span1 = {DetailData[0].span1}
                 li2 = {DetailData[0].li2}

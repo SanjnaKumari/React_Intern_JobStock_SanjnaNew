@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-const DetailSection = ({row1,img,status,row2,name,desg,skillClass,s1,s2,s3,s4,s5,s6,li1,span1,li2,span2,li3,span3,row3,footerBtn1,footerBtn2}) =>{
+const DetailSection = ({row1,img,status,row2,name,desg,Resume,skillClass,s1,s2,s3,s4,s5,s6,li1,span1,li2,span2,li3,span3,row3,footerBtn1,footerBtn2}) =>{
     return (
         <>
         <section className="detail-desc">
@@ -23,10 +23,10 @@ const DetailSection = ({row1,img,status,row2,name,desg,skillClass,s1,s2,s3,s4,s5
 								<span className="designation">{desg}</span>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
-							<div className={skillClass}>
-								<span>{s1}</span><span>{s2}</span><span>{s3}</span>
-								<span>{s4}</span><span>{s5}</span><span>{s6}</span>
-							</div>
+							{Resume && <div className="detail-desc-skill">
+								<span>HTML</span><span>css</span><span>photoshop</span>
+								<span>java</span><span>php</span><span>bootstrap</span>
+							</div>}
 						</div>
 						<div className="col-md-4 col-sm-4">
 							<div className="get-touch">
