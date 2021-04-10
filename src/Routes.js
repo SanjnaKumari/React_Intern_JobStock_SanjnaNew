@@ -8,6 +8,8 @@ import CreateJob from "./pages/CreateJob";
 import Payment from "./pages/Payment";
 import Pricing from "./pages/Pricing";
 import ClientProfile from "./pages/ClientProfile";
+import ResumeDetail from './pages/ResumeDetail'
+import CompanyDetail from './pages/CompanyDetail'
 
 const Routes = () => {
   return(
@@ -21,6 +23,10 @@ const Routes = () => {
       <Route exact path="/Client" render={props => <Home {...props} />}/>
       <Route exact path="/Payment" render={props => <Payment {...props} />}/>
       <Route exact path="/clientProfile" render={props => <ClientProfile {...props} />}/>
+      <Route exact path="/resume-detail.html" render={props => <ResumeDetail {...props} />}/>
+      <Route exact path="/company-detail.html" render={props => <CompanyDetail {...props} />}/>
+
+
     </Switch>
   )
 }

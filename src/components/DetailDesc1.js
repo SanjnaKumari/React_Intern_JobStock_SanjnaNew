@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ResumeDetailDesc1 = ({title}) => {
+const DetailDesc1 = ({title}) => {
     return (
         <>
         <div className="row row-bottom mrg-0">
@@ -23,4 +23,4 @@ const ResumeDetailDesc1 = ({title}) => {
     )
 }
 
-export default ResumeDetailDesc1
+export default DetailDesc1

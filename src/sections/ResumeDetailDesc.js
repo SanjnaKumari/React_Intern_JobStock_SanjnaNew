@@ -1,5 +1,6 @@
 import React from 'react'
-import ResumeDetailDesc1 from '../components/ResumeDetailDesc1'
+import DetailAboutDiv from '../components/DetailAboutDiv'
+import DetailDesc1 from '../components/DetailDesc1'
 import ResumeDetailDesc2 from '../components/ResumeDetailDesc2'
 // const Data1 = [
 //     {
@@ -67,14 +68,9 @@ const ResumeDetailDesc = () => {
         <>
         <section className="full-detail-description full-detail">
 			<div className="container">
-                <div className="row row-bottom mrg-0">
-					<h2 className="detail-title">About Resume</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-
-                <ResumeDetailDesc1 title = "Education"/>
-                <ResumeDetailDesc1 title = "Work Experience"/>
+                <DetailAboutDiv detailTitle = "About Resume"/>
+                <DetailDesc1 title = "Education"/>
+                <DetailDesc1 title = "Work Experience"/>
                 <div className="row row-bottom mrg-0">
 					<h2 className="detail-title">Skills</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

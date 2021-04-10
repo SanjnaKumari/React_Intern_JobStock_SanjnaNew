@@ -1,0 +1,45 @@
+import React from 'react'
+import bgImg from "../img/banner-10.jpg"
+import Navbar from '../components/Navbar'
+import Footer from '../sections/Footer'
+import Banner from '../components/Banner'
+// import CompanyDetailSection from '../sections/CompanyDetailSection'
+import DetailSection from '../sections/DetailSection'
+import DetailData from '../data/detail/DetailData'
+import CompanyDetailDesc from '../sections/CompanyDetailDesc'
+
+const CompanyDetail= () => {
+    return (
+        <>
+        <div class="Loader"></div>
+		<div class="wrapper">
+          <Navbar/>
+          <div class="clearfix"></div>
+          <Banner title = "Company Detail" bgImg={bgImg}/> 
+          {/* <CompanyDetailSection/> */}
+          <DetailSection
+                row1 = {DetailData[1].row1}
+                img = {DetailData[1].img}
+                status = {DetailData[1].status}
+                row2 = {DetailData[1].row2}
+                name = {DetailData[1].name}
+                desg = {DetailData[1].desg}
+                li1 = {DetailData[1].li1}
+                span1 = {DetailData[1].span1}
+                li2 = {DetailData[1].li2}
+                span2 = {DetailData[1].span2}
+                li3 = {DetailData[1].li3}
+                span3 = {DetailData[1].span3}
+                row3 = {DetailData[1].row3}
+                footerBtn1 = {DetailData[1].footerBtn1}
+                footerBtn2 = {DetailData[1].footerBtn2}
+            />
+          <CompanyDetailDesc/>
+          <Footer/>
+
+        </div> 
+        </>
+    )
+}
+
+export default CompanyDetail
