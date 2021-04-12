@@ -1,8 +1,8 @@
 import React from 'react'
 
+import {DetailData} from '../../data/detail/DetailData'
 
-
-const DetailSection = ({row1,img,status,row2,name,desg,Resume,skillClass,s1,s2,s3,s4,s5,s6,li1,span1,li2,span2,li3,span3,row3,footerBtn1,footerBtn2}) =>{
+const DetailSection = ({row1,img,status,row2,name,desg,desc,Resume,skillClass,s1,s2,s3,s4,s5,s6,span1,span2,li3,span3,li4,span4,li5,span5,row3,footerBtn1,footerBtn2}) =>{
     return (
         <>
         <section className="detail-desc">
@@ -21,22 +21,27 @@ const DetailSection = ({row1,img,status,row2,name,desg,Resume,skillClass,s1,s2,s
 							<div className="detail-desc-caption">
 								<h4>{name}</h4>
 								<span className="designation">{desg}</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<p>{desc}</p>
 							</div>
 							{Resume && <div className="detail-desc-skill">
-								<span>HTML</span><span>css</span><span>photoshop</span>
-								<span>java</span><span>php</span><span>bootstrap</span>
+								{/* <span>HTML</span><span>css</span><span>photoshop</span>
+								<span>java</span><span>php</span><span>bootstrap</span> */}
+								
+                            {DetailData[0].skills.map(val => {
+                            return(
+                    <span key={val}>{val}</span>);
+                  })}
 							</div>}
 						</div>
 						<div className="col-md-4 col-sm-4">
 							<div className="get-touch">
 								<h4>Get in Touch</h4>
 								<ul>
-									<li><i className="fa fa-map-marker"></i><span>Menlo Park, CA</span></li>
-									<li><i className="fa fa-envelope"></i><span>danieldax704@gmail.com</span></li>
-									<li><i class={li1}></i><span>{span1}</span></li>
-									<li><i className={li2}></i><span>{span2}</span></li>
-									<li><i className={li3}></i><span>{span3}</span></li>
+									<li><i className="fa fa-map-marker"></i><span>{span1}</span></li>
+									<li><i className="fa fa-envelope"></i><span>{span2}</span></li>
+									<li><i class={li3}></i><span>{span3}</span></li>
+									<li><i className={li4}></i><span>{span4}</span></li>
+									<li><i className={li5}></i><span>{span5}</span></li>
 								</ul>
 							</div>
 						</div>

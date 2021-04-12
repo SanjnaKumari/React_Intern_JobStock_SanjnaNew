@@ -45,8 +45,11 @@ const DetailFreelancer = () => {
 								<h5>Skills</h5>
 								<ul className="skills">
                   {FreelancerData[0].skills.map(val => {
-                    <li key={val}>{val}</li>
+                      return(
+                    <li key={val}>{val}</li>);
                   })}
+                  
+                  
                   </ul>
 							</div>
 

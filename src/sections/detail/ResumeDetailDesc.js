@@ -1,7 +1,8 @@
 import React from 'react'
-import DetailAboutDiv from '../components/DetailAboutDiv'
-import DetailDesc1 from '../components/DetailDesc1'
-import ResumeDetailDesc2 from '../components/ResumeDetailDesc2'
+import DetailAboutDiv from "../../components/detail/DetailAboutDiv"
+import DetailDesc1 from '../../components/detail/DetailDesc1'
+import ResumeDetailDesc2 from '../../components/detail/ResumeDetailDesc2'
+import {ResumeDetailDesc2Data,styleObj1,styleObj2} from '../../data/detail/DetailData'
 // const Data1 = [
 //     {
 //         title : "Apps Development",
@@ -21,47 +22,7 @@ import ResumeDetailDesc2 from '../components/ResumeDetailDesc2'
 //         ]
 //     }
 // ]
-const styleObj1 = [
-      {
-        width: "90%",
-        background:"#26a9e1"
-    },
-    
 
-    {
-        width: "80%",
-        background:"#f6931e"
-    },
-    
-
-     {
-        width: "65%",
-        background:"#8bc43f"
-    },
-
-    {
-        width: "52%",
-        background:"#d20001"
-    }
-]
-const styleObj2 = [
-    {
-        borderColor: "#26a9e1" ,
-        color :"#26a9e1"
-    },
-    {
-        borderColor: "#f6931e" ,
-        color :"#f6931e"
-    },
-    {
-        borderColor: "#8bc43f" ,
-        color :"#8bc43f"
-    },
-    {
-        borderColor: "#d20001" ,
-        color :"#d20001"
-    }
-]
 
 const ResumeDetailDesc = () => {
     return (
@@ -91,26 +52,26 @@ const ResumeDetailDesc = () => {
                             })} */}
                             
                              <ResumeDetailDesc2 
-                                title = "Apps Development"
-                                value = "90%"
+                                title = {ResumeDetailDesc2Data[0].title}
+                                value = {ResumeDetailDesc2Data[0].value}
                                 styleObj1 = {styleObj1[0]}
                                 styleObj2 = {styleObj2[0]}
                                 />
                                 <ResumeDetailDesc2 
-                                title = "iPhone Development"
-                                value = "80%"
+                                title = {ResumeDetailDesc2Data[1].title}
+                                value = {ResumeDetailDesc2Data[1].value}
                                 styleObj1 = {styleObj1[1]}
                                 styleObj2 = {styleObj2[1]}
                                 />
                                 <ResumeDetailDesc2 
-                                title = "Digital Marketing"
-                                value = "65%"
+                                 title = {ResumeDetailDesc2Data[2].title}
+                                value = {ResumeDetailDesc2Data[2].value}
                                 styleObj1 = {styleObj1[2]}
                                 styleObj2 = {styleObj2[2]}
                                 />
                                 <ResumeDetailDesc2 
-                                title = "SEO/SMO"
-                                value = "52%"
+                                title = {ResumeDetailDesc2Data[3].title}
+                                value = {ResumeDetailDesc2Data[3].value}
                                 styleObj1 = {styleObj1[3]}
                                 styleObj2 = {styleObj2[3]}
                                 />
@@ -119,27 +80,28 @@ const ResumeDetailDesc = () => {
 
                         <div className="col-md-6 col-sm-6">
 							<div className="panel-body">
-                                <ResumeDetailDesc2 
-                                title = "Apps Development"
-                                value = "90%"
+                                
+                            <ResumeDetailDesc2 
+                                title = {ResumeDetailDesc2Data[0].title}
+                                value = {ResumeDetailDesc2Data[0].value}
                                 styleObj1 = {styleObj1[0]}
                                 styleObj2 = {styleObj2[0]}
                                 />
                                 <ResumeDetailDesc2 
-                                title = "iPhone Development"
-                                value = "80%"
+                                title = {ResumeDetailDesc2Data[1].title}
+                                value = {ResumeDetailDesc2Data[1].value}
                                 styleObj1 = {styleObj1[1]}
                                 styleObj2 = {styleObj2[1]}
                                 />
                                 <ResumeDetailDesc2 
-                                title = "Digital Marketing"
-                                value = "65%"
+                                 title = {ResumeDetailDesc2Data[2].title}
+                                value = {ResumeDetailDesc2Data[2].value}
                                 styleObj1 = {styleObj1[2]}
                                 styleObj2 = {styleObj2[2]}
                                 />
                                 <ResumeDetailDesc2 
-                                title = "SEO/SMO"
-                                value = "52%"
+                                title = {ResumeDetailDesc2Data[3].title}
+                                value = {ResumeDetailDesc2Data[3].value}
                                 styleObj1 = {styleObj1[3]}
                                 styleObj2 = {styleObj2[3]}
                                 />

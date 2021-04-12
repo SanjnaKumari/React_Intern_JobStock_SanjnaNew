@@ -1,6 +1,6 @@
 import React from 'react'
-import DetailAboutDiv from '../components/DetailAboutDiv'
-import DetailDesc1 from '../components/DetailDesc1'
+import DetailAboutDiv from '../../components/detail/DetailAboutDiv'
+import DetailDesc1 from '../../components/detail/DetailDesc1'
 
 const CompanyDetailDesc = () => {
     return (

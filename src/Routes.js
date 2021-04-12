@@ -18,7 +18,7 @@ const Routes = () => {
       <Route exact path="/blog" render={props => <Blog {...props} />}/>
       <Route exact path="/createJob" render={props => <CreateJob {...props} />}/>
       <Route exact path="/Freelancing" render={props => <Freelancing {...props} />}/>
-      <Route exact path="/FreelancerDeatil" render={props => <FreelancerDetail {...props} />}/>
+      <Route exact path="/FreelancerDetail" render={props => <FreelancerDetail {...props} />}/>
       <Route exact path="/Pricing" render={props => <Pricing {...props} />}/>
       <Route exact path="/Client" render={props => <Home {...props} />}/>
       <Route exact path="/Payment" render={props => <Payment {...props} />}/>
