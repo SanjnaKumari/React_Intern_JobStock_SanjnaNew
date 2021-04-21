@@ -10,6 +10,9 @@ import Pricing from "./pages/Pricing";
 import ClientProfile from "./pages/ClientProfile";
 import ResumeDetail from './pages/ResumeDetail'
 import CompanyDetail from './pages/CompanyDetail'
+import ManageResume from './pages/ManageResume'
+import ResumeData from './data/employee/Resume'
+import CompanyData from './data/company/Data'
 
 const Routes = () => {
   return(
@@ -23,8 +26,23 @@ const Routes = () => {
       <Route exact path="/Client" render={props => <Home {...props} />}/>
       <Route exact path="/Payment" render={props => <Payment {...props} />}/>
       <Route exact path="/clientProfile" render={props => <ClientProfile {...props} />}/>
-      <Route exact path="/resumeDetail" render={props => <ResumeDetail {...props} />}/>
-      <Route exact path="/companyDetail" render={props => <CompanyDetail {...props} />}/>
+     
+      {ResumeData.map(data=>{
+                const {id} = data;
+                return(
+                    <Route key={id} exact path={`/resumeDetail/${id}`} render={(props) => <ResumeDetail {...props} data={data}/> } />
+
+                )
+            })}
+      {CompanyData.map(data=>{
+                const {id} = data;
+                return(
+                    <Route key={id} exact path={`/companyDetail/${id}`} render={(props) => <CompanyDetail {...props} data={data}/> } />
+
+                )
+            })}
+    
+      <Route exact path="/manageResume" render={props => <ManageResume {...props} />}/>
 
 
     </Switch>
